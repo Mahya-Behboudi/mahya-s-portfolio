@@ -1,12 +1,12 @@
 import React from 'react';
 import "./index.scss";
 import { Link, NavLink } from "react-router-dom";
-import LogoS from '../../assets/images/logo-s.png';
+import LogoS from '../../assets/images/mahyalogo.svg';
 import LogoSubtitle from '../../assets/images/logo_sub.png';
 // icons
-// import Home from '../../assets/images/SvgLogos/Home.svg';
-// import User from '../../assets/images/SvgLogos/user.svg';
-// import Envelope from '../../assets/images/SvgLogos/envelope.svg';
+import Email from '../../assets/images/SvgLogos/emails.svg';
+import Github from '../../assets/images/SvgLogos/github.svg';
+import Linkedin from '../../assets/images/SvgLogos/linkedin.svg';
 import  { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faEnvelope , faHome , faUser} from '@fortawesome/free-solid-svg-icons';
 
@@ -37,7 +37,32 @@ const index = () => {
                      <FontAwesomeIcon icon={faEnvelope} alt='Envelope'/>
                 </NavLink>
             </nav>
-            
+            <ul>
+                <li>
+                    <a target="_blank"
+                     rel="noopener noreferrer"
+                    href='https://www.linkedin.com/in/mahyabehboudi/'>
+                        <img src={Linkedin} alt="contact-icon" style={{width:'20px' , height:'20px'}}/>
+
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank"
+                     rel="noopener noreferrer"
+                    href='https://github.com/Mahya-Behboudi?tab=repositories'
+                    >
+                        <img src={Github} alt="contact-icon" style={{width:'20px' , height:'20px'}}/>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank"
+                     rel="noopener noreferrer"
+                    href='view-source:https://mail.google.com/mail/u/0/?tab=wm#settings/accounts'>
+                        <img src={Email} alt="contact-icon" style={{width:'20px' , height:'20px'}}/>
+                            
+                    </a>
+                </li>
+            </ul>
         </div>
     );
 };
