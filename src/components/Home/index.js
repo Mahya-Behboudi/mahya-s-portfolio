@@ -1,9 +1,11 @@
-import React from 'react';
+import React , {useState} from 'react';
 import LogoTitle from '../../assets/images/mahyalogo.svg';
 import { Link } from 'react-router-dom';
 import './index.scss';
-const index = () => {
-    return (
+const Home = () => {
+    const [letterClass,setLetterClass] =useState('text-animate');
+    const nameArrey =
+     return (
         <div className='container home-page'>
             <div className='text-zone'>
                 <h1>Hi , <br/> I'm 
@@ -20,4 +22,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default Home;
