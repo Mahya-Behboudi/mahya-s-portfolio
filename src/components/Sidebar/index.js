@@ -2,7 +2,6 @@ import React from 'react';
 import "./index.scss";
 import { Link, NavLink } from "react-router-dom";
 import LogoS from '../../assets/images/mahyalogo.svg';
-import LogoSubtitle from '../../assets/images/logo_sub.png';
 // icons
 import Email from '../../assets/images/SvgLogos/emails.svg';
 import Github from '../../assets/images/SvgLogos/github.svg';
@@ -15,7 +14,6 @@ const index = () => {
         <div className='nav-bar'>
             <Link className='Logo' to="/">
                 <img src={LogoS}   alt="Logo"/>
-                <img className="sub-logo" src={LogoSubtitle} alt="logoSubtitle"/>
             </Link>
             <nav>
                 <NavLink exact='true' activeclassname='active' className='' to="/">
